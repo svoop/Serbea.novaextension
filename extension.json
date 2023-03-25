@@ -1,0 +1,13 @@
+{
+  "identifier": "com.bitcetera.Serbea",
+  "name": "Serbea",
+  "organization": "Bitcetera",
+  "description": "Syntax coloring for the Serbea template files.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "bugs": "https://github.com/svoop/Serbea.novaextension/issues",
+  "repository": "https://github.com/svoop/Serbea.novaextension",
+  "keywords": ["serbea", "bridgetown", "ruby", "html", "templates", "syntax"],
+  "categories": ["languages"],
+  "activationEvents": ["onLanguage:serbea", "onLanguage:html", "onLanguage:markdown"]
+}
