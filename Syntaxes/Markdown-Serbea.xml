@@ -1,5 +1,5 @@
 <!-- <?xml version="1.0" encoding="UTF-8"?> -->
-<syntax name="serbea-markdown">
+<syntax name="markdown+serbea">
 	<meta>
 		<name>Markdown (Serbea)</name>
 		<type>markup</type>
@@ -94,7 +94,7 @@
 				<context behavior="subtree" group-by-name="true" />
 			</symbol>
 			<starts-with>
-				<expression>\{\%</expression>
+				<expression>\{\%@?</expression>
 				<capture number="0" name="serbea-markdown.tag.framework.expression.start" />
 			</starts-with>
 			<ends-with>

@@ -1,5 +1,5 @@
 <!-- <?xml version="1.0" encoding="UTF-8"?> -->
-<syntax name="serbea-html">
+<syntax name="html+serbea">
 	<meta>
 		<name>HTML (Serbea)</name>
 		<type>markup</type>
@@ -10,7 +10,7 @@
 	<detectors>
 		<extension priority="1.0">serb</extension>
 		<extension priority="0.2">html</extension>
-		<match-content lines="100" priority="0.9">\{\%</match-content>
+		<match-content lines="100" priority="0.9">\{\%@?</match-content>
 		<match-content lines="100" priority="0.7">\{\{</match-content>
 	</detectors>
 
@@ -118,7 +118,7 @@
 				<context behavior="subtree" group-by-name="true" />
 			</symbol>
 			<starts-with>
-				<expression>\{\%</expression>
+				<expression>\{\%@?</expression>
 				<capture number="0" name="serbea-html.tag.framework.expression.start" />
 			</starts-with>
 			<ends-with>
