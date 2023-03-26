@@ -2,17 +2,38 @@
   "identifier": "com.bitcetera.Serbea",
   "name": "Serbea",
   "organization": "Bitcetera",
-  "description": "Syntax coloring for the Serbea template files.",
+  "description": "Syntax coloring and commands for the Serbea template files.",
   "version": "0.1.1",
   "license": "MIT",
   "bugs": "https://github.com/svoop/Serbea.novaextension/issues",
   "repository": "https://github.com/svoop/Serbea.novaextension",
   "funding": "https://donorbox.org/bitcetera",
   "keywords": ["serbea", "bridgetown", "ruby", "html", "templates", "syntax"],
-  "categories": ["languages"],
+  "categories": ["languages", "commands"],
+  "main": "main.js",
   "activationEvents": [
     "onLanguage:serbea",
     "onLanguage:html+serbea",
     "onLanguage:markdown+serbea"
   ],
+  "commands": {
+    "editor": [
+      {
+        "title": "Convert ERB to Serbea",
+        "command": "serbea.convertErbToSerbea",
+        "when": "editorHasFocus",
+        "filters": {
+          "syntaxes": ["erb", "html+erb", "markdown+serbea"]
+        }
+      },
+      {
+        "title": "Convert Serbea to ERB",
+        "command": "serbea.convertSerbeaToErb",
+        "when": "editorHasFocus",
+        "filters": {
+          "syntaxes": ["serbea", "html+serbea", "markdown+serbea"]
+        }
+      }
+    ]
+  }
 }

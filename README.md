@@ -4,9 +4,16 @@
 
 This [Nova](https://nova.app) extension provides syntax coloring for the [Serbea template engine](https://www.serbea.dev/).
 
-![Serbea file in Nova editor](https://github.com/svoop/Serbea.novaextension/blob/main/preview.jpg?raw=true)
-
 * [Homepage](https://github.com/svoop/Serbea.novaextension)
 * Author: [Sven Schwyn - Bitcetera](https://bitcetera.com)
+
+![Serbea file in Nova editor](https://github.com/svoop/Serbea.novaextension/blob/main/preview.jpg?raw=true)
+
+## Commands
+
+* Serbea > Convert ERB to Serbea
+* Serbea > Convert Serbea to ERB
+
+## Thanks
 
 Thanks to [arthrfrts](https://github.com/arthrfrts) whose [Liquid.novaextension](https://github.com/arthrfrts/Liquid.novaextension) made a great boilerplate for this one.

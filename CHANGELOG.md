@@ -1,5 +1,8 @@
 ## 0.1.1
 
+#### Additions
+* Commands to convert between ERB and Serbea
+
 #### Changes
 * Extend syntax coloring to cover `{%@ ... %}`
 
